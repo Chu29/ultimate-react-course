@@ -144,7 +144,7 @@ function getBook(id) {
 }
 
 // Destructuring
-const book = getBook(2);
+const book = getBook(1);
 
 // object destructuring
 const { title, author, pages, publicationDate, genres, hasMovieAdaptation } =
@@ -155,5 +155,17 @@ console.log(author, title, genres);
 // const secondaryGenre = genres[1];
 
 // array destructuring
-const [primaryGenre, secondaryGenre, ...otherGenres] = genres;
+const [primaryGenre, secondaryGenre, ...otherGenres] = genres; // rest operator ... is used on the LHS
 console.log(primaryGenre, secondaryGenre, otherGenres);
+
+// rest and spread operator
+
+const newGenre = ["epic fantasy", ...genres]; // spread operator is used on the RHS
+newGenre;
+
+const updatedBook = {
+  ...book,
+  moviePublicationDate: "2001-12-19", //adding a new property
+  pages: 1000,//overriding an existing prop
+};
+updatedBook;
