@@ -144,6 +144,7 @@ function getBook(id) {
 }
 
 // Destructuring
+/*
 const book = getBook(1);
 
 // object destructuring
@@ -169,3 +170,17 @@ const updatedBook = {
   pages: 1000,//overriding an existing prop
 };
 updatedBook;
+*/
+
+const books = getBooks();
+books;
+
+const x = books.map((book) => book.title);
+x;
+
+const numbers = [1, 2, 3, 4, 5];
+const y = numbers.map((number) => number * 2);
+y;
+
+const longBooks = books.filter((book) => book.pages > 500);
+longBooks;
