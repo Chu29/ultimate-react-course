@@ -112,7 +112,6 @@ body {
 
 .pizza img {
   width: 12rem;
-  aspect-ratio: 1;
   align-self: start;
 }
 
